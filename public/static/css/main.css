@@ -1,0 +1,50 @@
+.productDetails{
+    -webkit-clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0); 
+    clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+}
+
+.productDetailsInverse {
+    -webkit-clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0); 
+    clip-path: polygon(50% 2%, 52% 0, 100% 0, 100% 100%, 0 100%, 0 0, 48% 0);
+
+}
+
+.rec-slider-container{
+    margin: 0!important;
+}
+
+.rec-carousel-wrapper{
+    position: relative;
+    direction: unset!important;
+}
+
+.rec-pagination{
+    position: absolute;
+    bottom: 40px;
+}
+
+.rec-dot{
+    background-color: #fff!important;
+}
+
+.rec-dot_active {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    background-color: transparent!important;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1px 3px rgba(255,255,255,1)!important;
+    width: 1rem;
+    height: 1rem;
+}
+
+@media screen and (min-width:768px){
+    .productDetails{
+        -webkit-clip-path: polygon(100% 0, 100% 48%, 98% 50%, 100% 52%, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 48%, 98% 50%, 100% 52%, 100% 100%, 0 100%, 0 0);
+    }
+    
+    .productDetailsInverse {
+        -webkit-clip-path: polygon(0 48%, 0 0, 100% 0, 100% 100%, 0 100%, 0 52%, 2% 50%); 
+        clip-path: polygon(0 48%, 0 0, 100% 0, 100% 100%, 0 100%, 0 52%, 2% 50%);
+    }
+    
+}
